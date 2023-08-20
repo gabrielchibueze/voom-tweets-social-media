@@ -1,0 +1,144 @@
+.main {
+    user-select: none;
+    text-align: center;
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+@font-face {
+    font-family: voom-heading;
+    src: url('/BrandierTrial-ThinItalic.otf');
+}
+
+h1 {
+    padding: none;
+    margin: 5px 0px 15px 0px;
+    text-align: left;
+    color: blue;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Kablammo', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-style: italic;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.voom-logo-div {
+    display: flex;
+    flex-direction: row;
+}
+.voom-btn {
+    width: 90%;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+textarea {
+    width: 290px;
+    height: 90px;
+    margin-left: 10px;
+    border: 0.5px rgb(240, 242, 245) solid;
+    border-radius: 10px;
+    resize: none;
+    line-height: 1.1;
+    padding: 5px;
+    font-size: 18px;
+}
+.voom-logo {
+    width: 50px;
+}
+.fa-heart {
+    color: rgb(200, 205, 207);
+}
+.like {
+    color: red;
+}
+
+.revoomed {
+    color: blue;
+    font-weight: bolder;
+}
+.unrevoomed {
+    color: none;
+}
+
+.hide-reply {
+    display: none;
+}
+
+/* Main voom feed  */
+
+.main-vooms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    border-top: 0.5px solid rgba(61, 58, 58, 0.308);
+    width: 350px;
+    padding-top: 10px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.voom-profile-photo {
+    width: 50px;
+    border-radius: 50%;
+}
+.voom-tweets {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.voom-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.voom-handle{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+i {
+    cursor:pointer;
+}
+.voom-texts{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+/* Reply Voom feeds */
+.reply-vooms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.308);
+    width: 345px;
+    padding-top: 15px;
+    padding-right: 4px;
+    font-size: 15px;
+    line-height: 1.3;
+}
