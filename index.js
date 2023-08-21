@@ -18,9 +18,10 @@ document.addEventListener('click', function(e){
     else if (e.target.id === 'voom-btn'){
         getVoomtextData()
     }
-    else if(e.target.dataset.revoomreply){
-        handleRevoomReplyClicks(e.target.dataset.revoomreply)
-    }
+    // else if(e.target.dataset.revoomreply){
+    //     handleRevoomReplyClicks(e.target.dataset.revoomreply)
+
+    // }
     else if (e.target.dataset.revoomlike){
         handleRevoomLikeClicks(e.target.dataset.revoomlike)
     }
@@ -154,16 +155,16 @@ function getVoomData(){
                     <div>
                         <img src="${reply.profilePic}" id="voom-profile-photo" class="voom-profile-photo"/>
                     </div>
-                    <div class="voom-tweets">
+                    <div class="revoom-tweets">
                         <p class="voom-handle">
                             ${reply.handle}
                         </p>
-                        <p class="voom-texts">
+                        <p class="revoom-texts">
                             ${reply.voomText}
                         </p>
-                        <div class="voom-icons" id="voom-icon">
+                        <div class="reply-voom-icons" id="reply-voom-icon">
                             <div class="voom-reply">
-                                <i class="fa-regular fa-comment-dots" data-revoomreply="${reply.uuid}"></i>
+                                <i class="fa-regular fa-comment-dots reply" data-revoomreply="${reply.uuid}"></i>
                                 ${reply.replies.length}
                             </div>
                             <div class="voom-likes">
@@ -223,10 +224,8 @@ function getVoomData(){
                 </div>          
             </div>
         </div>
-        <div>
-            <div id="replies-${voom.uuid}" class="hide-reply">
-                ${voomRepliesHtml}
-            </div>
+        <div id="replies-${voom.uuid}" class="main-replies hide-reply">
+            ${voomRepliesHtml}
         </div>
     </div>
 `
